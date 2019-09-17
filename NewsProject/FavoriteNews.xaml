@@ -1,0 +1,15 @@
+﻿<Window x:Class="NewsProject.FavoriteNews"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewsProject"
+        mc:Ignorable="d"
+        Title="FavoriteNews" Height="450" Width="800">
+    <Grid>
+        <ListBox Name="lb_favorites" MouseDoubleClick="Lb_favorites_MouseDoubleClick" HorizontalAlignment="Left" Height="356" Margin="10,10,0,0" VerticalAlignment="Top" Width="772"/>
+        <Button Content="Unfavorite" Margin="10,374,707,10" Click="ButtonUnfavorite_Click"/>
+        <Button Content="Cancel" Margin="594,374,123,10" Click="ButtonCancel_Click"/>
+        <Button Content="OK" Margin="356,374,360,10" Click="ButtonOK_Click"/>
+    </Grid>
+</Window>

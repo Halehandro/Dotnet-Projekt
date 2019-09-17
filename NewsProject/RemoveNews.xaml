@@ -1,0 +1,17 @@
+﻿<Window x:Class="NewsProject.RemoveNews"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewsProject"
+        mc:Ignorable="d"
+        Title="RemoveNews" Height="450" Width="800">
+    <Grid>
+        <Label Content="Select news to remove" HorizontalAlignment="Left" Margin="322,76,0,0" VerticalAlignment="Top"/>
+        <ListBox Name="lb_newsList" HorizontalAlignment="Left" Height="243" Margin="210,107,0,0" VerticalAlignment="Top" Width="358"/>
+        <Button Content="OK" Click="ButtonOK_Click" HorizontalAlignment="Left" Margin="233,374,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Cancel" Click="ButtonCancel_Click" HorizontalAlignment="Left" Margin="460,374,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Remove" Click="ButtonRemove_Click" HorizontalAlignment="Left" Margin="573,330,0,0" VerticalAlignment="Top" Width="76"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,22 @@
+﻿<Window x:Class="NewsProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewsProject"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Menu HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="792">
+        <MenuItem Header="Manage news">
+            <MenuItem Header="Add new" Click="AddMenuItem_Click"/>
+            <MenuItem Header="Remove" Click="RemoveMenuItem_Click"/>
+        </MenuItem>
+        <MenuItem Header="Favorites">
+            <MenuItem Header="Add to favorites" Click="FavoritesAddMenuItem_Click"/>
+            <MenuItem Header="See all favorites" Click="FavoritesAllMenuItem_Click"/>
+        </MenuItem>
+    </Menu>
+    <ListBox Name="lb_news" MouseDoubleClick="Lb_news_MouseDoubleClick" HorizontalAlignment="Left" Height="384" Margin="10,25,0,0" VerticalAlignment="Top" Width="772"/>
+    </Grid>
+</Window>
